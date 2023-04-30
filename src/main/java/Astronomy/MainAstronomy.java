@@ -10,7 +10,7 @@ public class MainAstronomy {
         OkHttpClient client = new OkHttpClient();
 
         HttpUrl.Builder builder = HttpUrl.parse("http://api.weatherapi.com/v1/astronomy.json").newBuilder();
-        builder.addQueryParameter("key", "58017c49095544888d3141958231204");
+        builder.addQueryParameter("key", "private_key");
         builder.addQueryParameter("q", "London");
 
         String url = builder.build().toString();
